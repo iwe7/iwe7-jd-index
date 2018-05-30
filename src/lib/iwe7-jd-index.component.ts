@@ -68,5 +68,4 @@ export class Iwe7JdIndexComponent extends BaseWithIcss implements OnInit {
       this.router.navigateByUrl(this.rightUrl);
     }
   }
-
 }

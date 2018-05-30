@@ -12,7 +12,7 @@ export class JdItemComponent implements OnInit, AfterViewInit {
   width: string;
   @HostBinding('style.margin')
   get margin() {
-    return this.title && this.desc ? null : '0px'
+    return this.title && this.desc ? null : '0px';
   }
   @Input() square: boolean = true;
   @Input() title: string;

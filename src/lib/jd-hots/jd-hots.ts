@@ -1,7 +1,7 @@
 import { ElementRef } from '@angular/core';
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Subject, of, fromEvent } from 'rxjs';
-import { switchMap, map, filter, takeUntil, filter } from 'rxjs/operators';
+import { switchMap, map, filter, takeUntil } from 'rxjs/operators';
 @Component({
   selector: 'jd-hots',
   templateUrl: 'jd-hots.html',

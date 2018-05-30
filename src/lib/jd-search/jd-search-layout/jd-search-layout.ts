@@ -42,9 +42,9 @@ export class JdSearchLayoutComponent extends BaseWithOnDestroy implements OnInit
           const top = document.documentElement.scrollTop;
           return of(top);
         }),
-        filter(top => top < 180),
+        filter(top => top < 280),
       ).subscribe((top: number) => {
-        this.opacity = top / 200;
+        this.opacity = Math.min(top / 200, 1);
       });
     }, 0);
   }
