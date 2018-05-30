@@ -1,0 +1,11 @@
+:host {
+    height: 200px;
+    display: block;
+}
+
+@import "~swiper/dist/css/swiper.min.css";
+.swiper-slide {
+    img {
+        width: 100%;
+    }
+}

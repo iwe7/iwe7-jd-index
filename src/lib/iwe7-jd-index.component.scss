@@ -1,0 +1,16 @@
+.fixed-top {
+    position: fixed;
+    top: 45px;
+    left: 0px;
+    right: 0px;
+    z-index: 9;
+}
+
+.adv-item {
+    background: transparent;
+    img {
+        width: 100%;
+        overflow: hidden;
+        -webkit-transition: opacity .3s ease-in;
+    }
+}
