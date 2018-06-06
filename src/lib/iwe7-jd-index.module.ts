@@ -1,9 +1,8 @@
-import { Iwe7TabbarModule } from '../../../iwe7-tabbar/src/public_api';
+import { Iwe7TabbarModule } from 'iwe7-tabbar';
 import { HttpClientModule } from '@angular/common/http';
 import { Iwe7FlexBoxModule } from 'iwe7-flex';
 import { FormsModule } from '@angular/forms';
 import { JdItemModule } from './jd-item/jd-item.module';
-import { JdFooterModule } from './jd-footer/jd-footer.module';
 import { Iwe7JdIndexComponent } from './iwe7-jd-index.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
@@ -14,7 +13,6 @@ import { Iwe7SquareModule } from 'iwe7-square';
 import { Iwe7JdModule } from '../../../iwe7-jd/src/public_api';
 
 export const Iwe7JdModules = [
-  JdFooterModule,
   JdItemModule,
   Iwe7JdModule
 ];
