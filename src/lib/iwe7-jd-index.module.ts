@@ -1,3 +1,4 @@
+import { Iwe7TabbarModule } from '../../../iwe7-tabbar/src/public_api';
 import { HttpClientModule } from '@angular/common/http';
 import { Iwe7FlexBoxModule } from 'iwe7-flex';
 import { FormsModule } from '@angular/forms';
@@ -26,6 +27,7 @@ export const Iwe7JdModules = [
     CommonModule,
     HttpClientModule,
     Iwe7FlexBoxModule,
+    Iwe7TabbarModule,
     ...Iwe7JdModules,
   ],
   declarations: [Iwe7JdIndexComponent],

@@ -1,4 +1,5 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef, Injector } from '@angular/core';
+import { Iwe7BaseComponent } from 'iwe7-base';
 
 @Component({
   selector: 'jd-footer',
@@ -6,11 +7,14 @@ import { Component, OnInit, ElementRef } from '@angular/core';
   styleUrls: ['./jd-footer.scss']
 })
 
-export class JdFooterComponent implements OnInit {
+export class JdFooterComponent extends Iwe7BaseComponent {
   width: number = 0;
-  constructor(public ele: ElementRef) { }
-
-  ngOnInit() {
-    this.width = this.ele.nativeElement.clientWidth;
+  position: string = 'absolute';
+  constructor(public ele: ElementRef, injector: Injector) {
+    super(injector, '');
+    this.setStyleInputs(['position']);
+    this.getCyc('ngOnInit').subscribe(res => {
+      this.width = this.ele.nativeElement.clientWidth;
+    });
   }
 }
